@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+﻿jQuery(document).ready(function($){
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 
@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 	var month = currentDate.getMonth() + 1
 	var year = currentDate.getFullYear()
 	var date_string = year + ' 年 ' + month + ' 月 ' + day + ' 日'
-	day_count = dateDiffInDays(new Date("1/29/2016"), new Date());
+	day_count = dateDiffInDays(new Date("11/5/2017"), new Date())+1;
 	document.getElementById('days').innerHTML = date_string + '，' + "我们已经在一起 " + day_count + " 天了"
 
 	//on scolling, show/animate timeline blocks when enter the viewport
